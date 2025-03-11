@@ -1,131 +1,118 @@
 <!DOCTYPE html>
-
 <html lang="en">
-  
 <head>
-  
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Lugarex</title>
-  <link rel="stylesheet" href="./css/style.min.css">
-  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lugarex - Luxury Travel in Spain</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Geomanist:wght@400&display=swap" rel="stylesheet">
 </head>
+<body>
+    <!-- Screen 1: Hero Section -->
+    <section class="screen screen-1">
+        <div class="header">
+            <a href="#contact" class="get-in-touch-btn">Get in touch</a>
+            <div class="logo">
+                <img src="img/logo.png" alt="Lugarex Logo">
+            </div>
+        </div>
+        <div class="hero-content">
+            <h2>Luxury travel in Spain</h2>
+            <h1>Your personal travel agency made by local founders</h1>
+        </div>
+    </section>
 
-<body class="main-page" cz-shortcut-listen="true">
-  
-  <header class="page-header">
-    <a href="https://lugarex.com/travel-experiences-in-spain/" class="logo">
-      <img src="./img/logo.webp" alt="" class="logo__image">
-    </a>
-  </header>
-
-  <section class="screen screen--one" id="screen1">
-
-        <div id="staticImage"></div>
-        <video autoplay muted id="myVideo">
-          <source src="img/iberian-peninsula.mp4" type="video/mp4">
-        </video>
-
-      <div class="screen-content">
-        <div class="v-center">
-          <div class="container">
-            <h1 class="screen__title">Luxury Travel in Spain</h1>
-            <div class="screen__subtitle">Lugarex is a Spain-based travel agency specializing in curating personalized itineraries and luxury custom trips to the Iberian Peninsula.</div>
-          <div class="screen-content__form-wrapper">
-            <script type="text/javascript">var submitted=false;</script>
-            <form action="" method="post" id="RegisterUserForm" target="hidden_iframe" onsubmit="submitted=true;">
-              <input type="text" placeholder="Your name" name="entry_1042368635" value="" id="entry_1042368635" dir="auto" aria-label="Name  " title="" required="">
-              <input type="email" name="entry.2123178369" value="" id="entry_2123178369" placeholder="Your email" required="">
-              <input type="hidden" name="entry.1535383479" value="&#39;858179471.1739220781" id="entry_1535383479" dir="auto" aria-label="CID  " title="">
-              <input type="hidden" name="entry.1303173719" id="entry_1303173719" aria-label="gclid  " value="false">
-              <input type="checkbox" name="" value="" id="" dir="auto" aria-label="" title="" required="">By submitting the form you agree to our <a href="https://lugarex.com/privacy-policy/">privacy policy</a>
-              <button type="submit" class="btn btn--submit" id="ButtonSubmit">Get details</button>
-             
-</form>
+    <!-- Screen 2: Benefits Section -->
+    <section class="screen screen-2">
+        <div class="benefits-container">
+            <div class="benefit-card why-us-card">
+                <div class="benefit-icon">
+                    <img src="img/benefit1-icon.png" alt="Why us icon">
+                </div>
+                <div class="benefit-content">
+                    <h3>Why us</h3>
+                    <p>At Lugarex we are passionate about designing tailor-made trips curated with your wishes and needs at heart.</p>
+                </div>
+            </div>
             
-          </div>
-          <a href="#screen2" class="scroll-down"></a>
+            <div class="benefit-card how-we-work-card">
+                <div class="benefit-icon">
+                    <img src="img/benefit2-icon.png" alt="How we work icon">
+                </div>
+                <div class="benefit-content">
+                    <h3>How we work</h3>
+                    <p>For us it is essential to put ourselves in the place of the traveler and design a tailor-made itinerary as if we were traveling ourselves.</p>
+                </div>
+            </div>
+            
+            <div class="benefit-card who-we-are-card">
+                <div class="benefit-icon">
+                    <img src="img/benefit3-icon.png" alt="Who we are icon">
+                </div>
+                <div class="benefit-content">
+                    <h3>Who we are</h3>
+                    <p>The team at Lugarex is made up of a group of people passionate about discovering and really experiencing the world.</p>
+                </div>
+            </div>
+
+            <div class="badges-card">
+                <img src="img/espana-badge.png" alt="España Badge" class="badge">
+                <img src="img/zicasso-badge.png" alt="Zicasso Badge" class="badge">
+                <img src="img/andalucia-badge.png" alt="Andalucia Badge" class="badge">
+            </div>
         </div>
-      </div>
-    </div>
-    </div>
-  </section>
-  <section class="screen screen--two" id="screen2">
-    <div class="v-center">
-      <div class="container">
-        <!-- <h2 class="screen__title">Yet another headline here</h2>
-        <div class="screen__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</div> -->
-        <div class="features">
-          <div class="feature feature--one">
-            <div class="feature__title">Why us</div>
-            <p class="feature__description">At Lugarex we are passionate about designing tailor-made trips curated with your wishes and needs at heart.</p>
-          </div>
-          <div class="feature feature--two">
-            <div class="feature__title">How we work</div>
-            <p class="feature__description">
-              For us it is essential to put ourselves in the place of the traveler and design a tailor-made itinerary as if we were traveling ourselves.</p>
-          </div>
-          <div class="feature feature--three">
-            <div class="feature__title">Who we are</div>
-            <p class="feature__description">
-              The team at Lugarex is made up of a group of people passionate about discovering and really experiencing the world</p>
-          </div>
+    </section>
+
+    <!-- Screen 3: Contact Section -->
+    <section class="screen screen-3" id="contact">
+        <div class="contact-container">
+            <div class="company-info">
+                <h2>Lugarex Travel Experiences SL</h2>
+                <div class="team-portraits">
+                    <img class="portrait" src="img/daniel-luna.webp" alt="Daniel Luna">
+                    <img class="portrait" src="img/manlio-garcia-contreras.webp" alt="Manlio Garcia Contreras">
+                </div>
+                <p class="phone"><span>(US) 716-220-8667</span><br><span>Spain local time</span></p>
+                <p class="email">hello@lugarex.com</p>
+                <div class="footer-links">
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+                <div class="footer-logo">
+                    <img src="img/logo-white.png" alt="Lugarex Logo">
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <form>
+                    <div class="form-group">
+                        <label for="name">Your name</label>
+                        <input type="text" id="name" placeholder="Alex Smith">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email (required)</label>
+                        <input type="email" id="email" placeholder="alexsmith@gmail.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone number</label>
+                        <input type="tel" id="phone" placeholder="+1">
+                    </div>
+                    <div class="form-group">
+                        <label for="trip">What do you have in mind for this trip</label>
+                        <input type="text" id="trip">
+                    </div>
+                    <div class="form-group">
+                        <label for="group">Tell us about your group</label>
+                        <textarea id="group" rows="3"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="budget">Budget per person excluding international flights</label>
+                        <input type="text" id="budget">
+                    </div>
+                    <button type="submit" class="submit-btn">SEND</button>
+                </form>
+            </div>
         </div>
-        <div class="mentions">
-          <h3 class="mentions__title">Find Lugarex mentioned in:</h3>
-          <ul class="mentions__list">
-            <li class="mentions__list-item">
-              <a href="" target="_blank" class="mentions__link">
-                <img src="img/spain-info.webp" alt="" class="mentions__image">
-              </a>
-            </li>
-            <li class="mentions__list-item">
-              <a href="" target="_blank" class="mentions__link">
-                <img src="img/zicasso.png" alt="" class="mentions__image">
-              </a>
-            </li>
-            <li class="mentions__list-item">
-              <a href="" target="_blank" class="mentions__link">
-                <img src="img/andalucia-org.webp" alt="" class="mentions__image">
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <a href="#screen3" class="scroll-down"></a>
-    </div>
-  </section>
-  
-  
-  <section class="screen screen--three" id="screen3">
-
-        <div class="screen-content">
-          <div class="v-center">
-            <div class="container">
-
-          <h2 class="screen__title">Luxury Travel in Spain</h2>
-          <div class="screen__subtitle">Lugarex is a Spain-based travel agency specializing in curating personalized itineraries and luxury custom trips to the Iberian Peninsula.</div>
-          <div class="screen-content__form-wrapper">
-            <script type="text/javascript">var submitted=false;</script>            <form action="" method="post" id="RegisterUserForm" target="hidden_iframe" onsubmit="submitted=true;">
-              <input type="text" placeholder="Your name" name="entry_1042368635" value="" id="entry_1042368635" dir="auto" aria-label="Name  " title="" required="">
-              <input type="email" name="entry.2123178369" value="" id="entry_2123178369" placeholder="Your email" required="">
-              <input type="hidden" name="entry.1535383479" value="&#39;858179471.1739220781" id="entry_1535383479" dir="auto" aria-label="CID  " title="">
-              <input type="hidden" name="entry.1303173719" id="entry_1303173719" aria-label="gclid  " value="false">
-              <input type="checkbox" name="" value="" id="" dir="auto" aria-label="" title="" required="">By submitting the form you agree to our <a href="https://lugarex.com/privacy-policy/">privacy policy</a>
-              <button type="submit" class="btn btn--submit" id="ButtonSubmit">Get details</button>
-             
-</form>
-          </div>
-          
-        </div>
-      </div>
-      <a href="#screen1" class="scroll-up"></a>
-    </div>
-  </section>
-
-  <footer class="page-footer">
-  </footer>
-
-
+    </section>
 </body>
 </html>
