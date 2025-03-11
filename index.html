@@ -85,35 +85,38 @@
             </div>
 
             <div class="contact-form">
-                <form>
+                <form name="submit-to-google-sheet">
                     <div class="form-group">
                         <label for="name">Your name</label>
-                        <input type="text" id="name" placeholder="Alex Smith">
+                        <input type="text" id="name" name="name" placeholder="Alex Smith">
                     </div>
                     <div class="form-group">
                         <label for="email">Email (required)</label>
-                        <input type="email" id="email" placeholder="alexsmith@gmail.com" required>
+                        <input type="email" id="email" name="email" placeholder="alexsmith@gmail.com" required>
                     </div>
                     <div class="form-group">
                         <label for="phone">Phone number</label>
-                        <input type="tel" id="phone" placeholder="+1">
+                        <input type="tel" id="phone" name="phone" placeholder="+1">
                     </div>
                     <div class="form-group">
                         <label for="trip">What do you have in mind for this trip</label>
-                        <input type="text" id="trip">
+                        <input type="text" id="trip" name="trip">
                     </div>
                     <div class="form-group">
                         <label for="group">Tell us about your group</label>
-                        <textarea id="group" rows="3"></textarea>
+                        <textarea id="group" name="group" rows="3"></textarea>
                     </div>
                     <div class="form-group">
                         <label for="budget">Budget per person excluding international flights</label>
-                        <input type="text" id="budget">
+                        <input type="text" id="budget" name="budget">
                     </div>
-                    <button type="submit" class="submit-btn">SEND</button>
+                    <input type="hidden" name="gclid" id="gclid" value="">
+                    <button type="submit" class="submit-btn">SEND <div class="spinner" id="spinner" style="display: none;">
+                    </div></button>
                 </form>
             </div>
         </div>
     </section>
+<script src="app.js"></script>
 </body>
 </html>
