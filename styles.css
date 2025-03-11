@@ -75,6 +75,10 @@ a {
     max-width: 100%;
 }
 
+.mobile-get-in-touch {
+    display: none;
+}
+
 .hero-content h1 {
     font-size: 110px;
     background: linear-gradient(to bottom, #FFFFFF 0%, #484848 100%);
@@ -264,7 +268,6 @@ a {
 .footer-links a {
     color: white;
     margin-right: 15px;
-    margin-left: 15px;
     font-size: 16px;
     text-decoration: none;
     border-bottom: 2px solid white;
@@ -319,7 +322,7 @@ a {
 }
 
 /* Responsive styles for mobile */
-@media (max-width: 1280px) {
+@media (max-width: 1279px) {
     .header {
         padding: 20px 40px;
         margin-bottom: auto;
@@ -446,12 +449,26 @@ a {
     .badges-card {
         grid-row: 4;
     }
+
+    .footer-links a {
+        margin-left: 15px;
+    }
 }
 
 /* Add smaller screen breakpoint */
 @media (max-width: 480px) {
     .header {
         padding: 20px;
+        justify-content: flex-end;
+    }
+
+    .header .get-in-touch-btn {
+        display: none;
+    }
+
+    .mobile-get-in-touch {
+        display: block;
+        margin-top: 3rem;
     }
 
     .get-in-touch-btn, .submit-btn {
@@ -472,7 +489,7 @@ a {
     }
 
     .logo img {
-        height: 50px;
+        height: 100px;
     }
 }
 
