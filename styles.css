@@ -30,6 +30,10 @@ a {
     display: inline-block;
 }
 
+.submit-btn {
+    border-radius: 12px;
+}
+
 /* Update submit button styles to accommodate spinner */
 .submit-btn {
     width: 100%;
