@@ -568,6 +568,10 @@ a {
         text-align: center;
         display: inline-block;
     }
+
+    .submit-btn {
+        border-radius: 12px;
+    }
     
     .hero-content {
         padding: 0 20px;
