@@ -581,9 +581,15 @@ a {
     }
 
     .screen-1 {
-        height: 100%; /* Use 100% instead of 100vh on mobile */
-        min-height: 100vh; /* Ensure minimum height */
-        max-height: 100vh; /* Prevent overflow */
+        height: 100vh;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .hero-content {
+        padding: 0 20px;
+        margin-top: auto;
+        margin-bottom: 40px;
     }
 }
 
@@ -603,16 +609,15 @@ a {
     }
 }
 
-/* Add these iOS-specific fixes */
+/* Fix for mobile height issues */
 @supports (-webkit-touch-callout: none) {
     /* iOS Safari specific fix */
     .screen-1 {
-        height: -webkit-fill-available;
-        min-height: -webkit-fill-available;
+        height: 100vh; /* Keep consistent */
     }
     
-    /* Additional fix for newer iOS versions */
+    /* Remove the body/html settings that might be causing layout issues */
     body, html {
-        height: -webkit-fill-available;
+        /* Remove height: -webkit-fill-available; */
     }
 }
