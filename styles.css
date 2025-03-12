@@ -581,7 +581,7 @@ a {
     }
 
     .screen-1 {
-        height: 100vh;
+        height: 100%; /* Change from 100vh to 100% */
         position: relative;
         overflow: hidden;
     }
@@ -590,6 +590,10 @@ a {
         padding: 0 20px;
         margin-top: auto;
         margin-bottom: 40px;
+    }
+
+    html, body {
+        height: 100%;
     }
 }
 
@@ -609,15 +613,13 @@ a {
     }
 }
 
-/* Fix for mobile height issues */
+/* Special iOS fixes */
 @supports (-webkit-touch-callout: none) {
-    /* iOS Safari specific fix */
-    .screen-1 {
-        height: 100vh; /* Keep consistent */
-    }
-    
-    /* Remove the body/html settings that might be causing layout issues */
-    body, html {
-        /* Remove height: -webkit-fill-available; */
+    /* Only for iOS Safari */
+    @media (max-width: 480px) {
+        .screen-1 {
+            /* This works on iOS without breaking layout */
+            height: -webkit-fill-available; 
+        }
     }
 }
