@@ -55,6 +55,7 @@ a {
     color: white;
     display: flex;
     flex-direction: column;
+    overflow: hidden; /* Prevent any content overflow */
 }
 
 .header {
@@ -578,6 +579,12 @@ a {
         padding: 0 20px;
         margin: 0 auto;
     }
+
+    .screen-1 {
+        height: 100%; /* Use 100% instead of 100vh on mobile */
+        min-height: 100vh; /* Ensure minimum height */
+        max-height: 100vh; /* Prevent overflow */
+    }
 }
 
 /* Add larger screen breakpoint */
@@ -593,5 +600,19 @@ a {
     .benefits-container,
     .contact-container {
         max-width: 1080px; /* 1440px - (180px * 2) */
+    }
+}
+
+/* Add these iOS-specific fixes */
+@supports (-webkit-touch-callout: none) {
+    /* iOS Safari specific fix */
+    .screen-1 {
+        height: -webkit-fill-available;
+        min-height: -webkit-fill-available;
+    }
+    
+    /* Additional fix for newer iOS versions */
+    body, html {
+        height: -webkit-fill-available;
     }
 }
