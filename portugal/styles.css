@@ -200,6 +200,15 @@ a {
     margin: 15px 0;
 }
 
+/* Update badge styles */
+.badge {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    margin: 15px 0;
+    object-fit: contain; /* Ensures the badge maintains aspect ratio */
+}
+
 /* Screen 3: Contact Section */
 .screen-3 {
     min-height: 100vh;
@@ -601,6 +610,10 @@ a {
 
     html, body {
         height: 100%;
+    }
+
+    .badge {
+        max-width: 120px; /* Slightly smaller on very small screens */
     }
 }
 
