@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Travel in Portugal | Lugarex</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Geomanist:wght@400&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="img/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="img/favicon.svg" />
+    <link rel="shortcut icon" href="img/favicon.ico" />
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png" />
+    <link rel="manifest" href="img/site.webmanifest" />
+</head>
+<body>
+    <!-- Screen 1: Hero Section -->
+    <section class="screen screen-1">
+        <div class="header">
+            <a href="#contact" class="get-in-touch-btn">Get in touch</a>
+            <div class="logo">
+                <img src="img/logo.png" alt="Lugarex Logo">
+            </div>
+        </div>
+        <div class="hero-content">
+            <h2>Luxury travel in Portugal</h2>
+            <h1>Your personal travel agency made by local founders</h1>
+            <a href="#contact" class="get-in-touch-btn mobile-get-in-touch">Get in touch</a>
+        </div>
+    </section>
+
+    <!-- Screen 2: Benefits Section -->
+    <section class="screen screen-2">
+        <div class="benefits-container">
+            <div class="benefit-card why-us-card">
+                <div class="benefit-icon">
+                    <img src="img/benefit1-icon.png" alt="Why us icon">
+                </div>
+                <div class="benefit-content">
+                    <h3>Why us</h3>
+                    <p>At Lugarex we are passionate about designing tailor-made trips curated with your wishes and needs at heart.</p>
+                </div>
+            </div>
+            
+            <div class="benefit-card how-we-work-card">
+                <div class="benefit-icon">
+                    <img src="img/benefit2-icon.png" alt="How we work icon">
+                </div>
+                <div class="benefit-content">
+                    <h3>How we work</h3>
+                    <p>For us it is essential to put ourselves in the place of the traveler and design a tailor-made itinerary as if we were traveling ourselves.</p>
+                </div>
+            </div>
+            
+            <div class="benefit-card who-we-are-card">
+                <div class="benefit-icon">
+                    <img src="img/benefit3-icon.png" alt="Who we are icon">
+                </div>
+                <div class="benefit-content">
+                    <h3>Who we are</h3>
+                    <p>The team at Lugarex is made up of a group of people passionate about discovering and really experiencing the world.</p>
+                </div>
+            </div>
+
+            <div class="badges-card">
+                <img src="img/espana-badge.png" alt="España Badge" class="badge">
+                <img src="img/zicasso-badge.webp" alt="Zicasso Badge" class="badge">
+                <img src="img/andalucia-badge.png" alt="Andalucia Badge" class="badge">
+            </div>
+        </div>
+    </section>
+
+    <!-- Screen 3: Contact Section -->
+    <section class="screen screen-3" id="contact">
+        <div class="contact-container">
+            <div class="company-info">
+                <h2>Lugarex Travel Experiences SL</h2>
+                <div class="team-portraits">
+                    <img class="portrait" src="img/daniel-luna.webp" alt="Daniel Luna">
+                    <img class="portrait" src="img/manlio-garcia-contreras.webp" alt="Manlio Garcia Contreras">
+                </div>
+                <p class="phone"><span>(US) 716-220-8667</span><br><span>Portugal local time</span></p>
+                <p class="email">hello@lugarex.com</p>
+                <div class="footer-links">
+                    <a href="https://lugarex.com/terms-conditions/" target="_blank">Terms of Service</a>
+                    <a href="https://lugarex.com/privacy-policy/" target="_blank">Privacy Policy</a>
+                </div>
+                <div class="footer-logo">
+                    <img src="img/logo-white.png" alt="Lugarex Logo">
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <form name="submit-to-google-sheet">
+                    <div class="form-group">
+                        <label for="name">Your name</label>
+                        <input type="text" id="name" name="name" placeholder="Alex Smith">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email (required)</label>
+                        <input type="email" id="email" name="email" placeholder="alexsmith@gmail.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone number</label>
+                        <input type="tel" id="phone" name="phone" placeholder="+1">
+                    </div>
+                    <div class="form-group">
+                        <label for="trip">What do you have in mind for this trip</label>
+                        <textarea id="trip" name="trip" rows="2"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="group">Tell us about your group</label>
+                        <textarea id="group" name="group" rows="2"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="budget">Budget per person excluding international flights</label>
+                        <input type="text" id="budget" name="budget">
+                    </div>
+                    <input type="hidden" name="gclid" id="gclid" value="">
+                    <button type="submit" class="submit-btn">SEND <div class="spinner" id="spinner" style="display: none;">
+                    </div></button>
+                </form>
+            </div>
+        </div>
+    </section>
+<script src="app.js"></script>
+</body>
+</html>
