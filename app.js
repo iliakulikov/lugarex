@@ -47,3 +47,15 @@ function cookieClose() {
   document.getElementById("cookie-message").style.display = "none";
 }
 
+// Video background functionality
+function loadHeroVideo() {
+  var heroVideo = document.getElementById("hero-video");
+  if (heroVideo) {
+    heroVideo.style.display = "block";
+    heroVideo.load(); // Ensure video is loaded
+  }
+}
+
+// Load video after page is fully loaded
+window.addEventListener('load', loadHeroVideo);
+
