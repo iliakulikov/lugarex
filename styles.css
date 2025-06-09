@@ -68,7 +68,7 @@ a {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     object-fit: cover;
     z-index: 0; /* Behind all content */
     filter: brightness(35%); /* Reduce brightness to 50% */
